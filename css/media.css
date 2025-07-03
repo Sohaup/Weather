@@ -1,0 +1,26 @@
+@media  screen and (max-width:768px) {
+.nav-link:hover {
+    border: none;
+} 
+.nav-link.active {   
+    border:none;   
+    margin-right: 10px;
+}
+.nav-link {
+    font-size: .9rem;   
+}
+
+.nav-item {
+    border-bottom:2px solid rgb(82, 79, 79)
+}
+
+.nav-item.special {
+    border-bottom:none;
+}
+
+.navbar-nav {
+    background-color: rgb(38,41,54);
+    margin: 30px 0px;
+}
+
+}
