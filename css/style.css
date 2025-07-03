@@ -2,6 +2,8 @@
     --dark:rgba(0,0,0,1);
     --light:white;
     --primary:rgb(0,154,216);
+    --main-color:rgb(38,41,54);
+    
 }
 
 * {
@@ -10,12 +12,16 @@
     box-sizing: border-box;
 }
 
-html , body {
-    
-} 
-
 a {
     text-decoration: none;
+}
+
+main {
+    background-color: rgb(38,41,54);
+    min-height: 82vh;
+    background-image: url("../imgs/imgi_6_banner.png");
+    background-repeat: no-repeat;
+    background-position: top;    
 }
 
 .navbar {
@@ -62,4 +68,47 @@ a {
 .nav-link:hover {
     border:2px solid var(--primary);
     border-radius: 25px;
+}
+
+/* main section style */
+
+.form-control {
+    border:none;
+    padding: 15px 0px;
+    z-index: 1;
+    color: var(--light);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: gray;
+}
+
+.inputBtn {
+    /* position: relative;
+    left: -40px; */
+    z-index: 20;
+}
+
+main .form .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #628ccb;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #628ccb;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    font-size: .8rem;
+}
+
+.card .card-body {
+    background-color: var(--main-color);
 }
