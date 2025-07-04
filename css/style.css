@@ -3,7 +3,9 @@
     --light:white;
     --primary:rgb(0,154,216);
     --main-color:rgb(38,41,54);
-    
+    --seconary-dark:rgb(45,48,61);
+    --thirdly-dark:rgb(50,53,68);
+    --secondary:gray;
 }
 
 * {
@@ -16,13 +18,7 @@ a {
     text-decoration: none;
 }
 
-main {
-    background-color: rgb(38,41,54);
-    min-height: 82vh;
-    background-image: url("../imgs/imgi_6_banner.png");
-    background-repeat: no-repeat;
-    background-position: top;    
-}
+/* navbar style */
 
 .navbar {
     --bs-navbar-padding-x: 0;
@@ -54,9 +50,9 @@ main {
 
 
 .nav-link {   
-    font-size: .6rem;   
-    /* transition: .5s;  */
+    font-size: .6rem; 
 }
+
 
 .nav-link.active {
     color: var(--primary);
@@ -72,6 +68,14 @@ main {
 
 /* main section style */
 
+main {
+    background-color: rgb(38,41,54);
+    min-height: 82vh;
+    background-image: url("../imgs/imgi_6_banner.png");
+    background-repeat: no-repeat;
+    background-position: top;    
+}
+
 .form-control {
     border:none;
     padding: 15px 0px;
@@ -84,13 +88,7 @@ main {
 }
 
 .form-control::placeholder {
-    color: gray;
-}
-
-.inputBtn {
-    /* position: relative;
-    left: -40px; */
-    z-index: 20;
+    color: var(--secondary);
 }
 
 main .form .btn-primary {
@@ -109,6 +107,15 @@ main .form .btn-primary {
     font-size: .8rem;
 }
 
-.card .card-body {
-    background-color: var(--main-color);
+.card  {
+    background-color: var(--thirdly-dark);
+    border-radius: 16px;
+}
+
+.card .card-title {
+    background-color: var(--seconary-dark);
+    font-size: .8rem;   
+    padding: 10px 3px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
