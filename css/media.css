@@ -24,4 +24,9 @@
     border-radius: 16px;
 }
 
+.navbar {
+    height: auto;
+    max-height: none;
+}
+
 }

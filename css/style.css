@@ -35,6 +35,8 @@ a {
     --bs-navbar-nav-link-padding-x: 2rem;
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     --bs-navbar-toggler-border-color: var(--light);
+     max-height: 150px;
+     height: 150px;
 }
 
 .navbar-brand {
@@ -70,7 +72,7 @@ a {
 
 main {
     background-color: rgb(38,41,54);
-    min-height: 82vh;
+    min-height: 70vh;
     background-image: url("../imgs/imgi_6_banner.png");
     background-repeat: no-repeat;
     background-position: top;    
@@ -118,4 +120,29 @@ main .form .btn-primary {
     padding: 10px 3px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+/* footer style */
+footer {
+    background-color: var(--thirdly-dark);   
+}
+
+.icons span {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.icons span:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+footer p {
+    font-size: .8rem;
 }
