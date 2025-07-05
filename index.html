@@ -59,94 +59,66 @@
       
     <main class="py-5  ">
      <div class="container  justify-content-center">
-        <div class="row g-4">         
-           
-         <div class="input-group mb-3 position-relative ">
-             <input type="text" class="form-control  bg-dark text-light" placeholder="Find Your Location" aria-label="Recipient’s username" aria-describedby="button-addon2">
-            <input type="button" class="btn btn-primary  " type="button" id="button-addon2" value="Find"/>
-        </div>          
-        
-           <div class="col-md-4">
-            <div class="card " >
-              <h5 class="card-title text-secondary d-flex justify-content-between mb-auto " >
-                <span>Thursday</span>
-                <span>3July</span>
-              </h5>
-                <div class="card-body">
-                 
-                  <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
-                  <p class="card-text display-1 text-light">
-                    36.4oC
-                  </p>
-                  <img src="imgs/imgi_2_113.png" alt="sun icon" />
-                  <p class="text-primary fs-6">sunny</p>
-                  <div class="icons d-flex gap-3">
-                    <img src="imgs/imgi_3_icon-umberella.png" alt="umbrella icon"/>
-                    <img src="imgs/imgi_4_icon-wind.png" alt="wind icon"/>
-                    <img src="imgs/imgi_5_icon-compass.png" alt="compass icon"/>
-                  </div>
-                </div>
-              </div>
-           </div>       
 
-           <div class="col-md-4">
-            <div class="card  " >
-               <h5 class="card-title text-secondary d-flex justify-content-between mb-auto">
-                <span>Thursday</span>
-                <span>3July</span>
-               </h5>
-                <div class="card-body">
-                 
-                  <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
-                  <p class="card-text display-1 text-light">
-                    36.4oC
-                  </p>
-                  <img src="imgs/imgi_2_113.png" alt="sun icon" />
-                  <p class="text-primary fs-6">sunny</p>
-                  <div class="icons d-flex gap-3">
-                    <img src="imgs/imgi_3_icon-umberella.png" alt="umbrella icon"/>
-                    <img src="imgs/imgi_4_icon-wind.png" alt="wind icon"/>
-                    <img src="imgs/imgi_5_icon-compass.png" alt="compass icon"/>
-                  </div>
-                </div>
-              </div>
-           </div>    
-           
-           
-           <div class="col-md-4">
-            <div class="card  " >
+      <div class="input-group mb-3 position-relative ">
+        <input type="text" id="weatherInput" class="form-control  bg-dark text-light" placeholder="Find Your Location" aria-label="Recipient’s username" aria-describedby="button-addon2">
+       <input type="button" class="btn btn-primary  " type="button" id="button-addon2" value="Find"/>
+      </div>       
+        <div class="row g-4" id="cardsContainer">
+          <div class="col-md-4">
+            <div class="card">
               <h5 class="card-title text-secondary d-flex justify-content-between mb-auto">
-                <span>Thursday</span>
-                <span>3July</span>
+                <span>SuterDay</span>
+                <span>5 july</span>
               </h5>
-                <div class="card-body">
-                
-                  <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
-                  <p class="card-text display-1 text-light">
-                    36.4oC
-                  </p>
-                  <img src="imgs/imgi_2_113.png" alt="sun icon" />
-                  <p class="text-primary fs-6">sunny</p>
-                  <div class="icons d-flex gap-3">
-                    <img src="imgs/imgi_3_icon-umberella.png" alt="umbrella icon"/>
-                    <img src="imgs/imgi_4_icon-wind.png" alt="wind icon"/>
-                    <img src="imgs/imgi_5_icon-compass.png" alt="compass icon"/>
-                  </div>
-                </div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
+                <p class="card-text display-1 text-light">31.3</p>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather Icon">
+                <p class="text-primary fs-6">Sunny</p>
               </div>
-           </div>       
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <h5 class="card-title text-secondary d-flex justify-content-between mb-auto">
+                <span>SuterDay</span>
+                <span>5 july</span>
+              </h5>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
+                <p class="card-text display-1 text-light">31.3</p>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather Icon">
+                <p class="text-primary fs-6">Sunny</p>
+              </div>
+            </div>
+          </div>
 
 
-                
-            
-        </div>
-     </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h5 class="card-title text-secondary d-flex justify-content-between mb-auto">
+                <span>SuterDay</span>
+                <span>5 july</span>
+              </h5>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-secondary">cairo</h6>
+                <p class="card-text display-1 text-light">31.3</p>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="Weather Icon">
+                <p class="text-primary fs-6">Sunny</p>
+              </div>
+            </div>
+          </div>
+
+        </div>   
+      </div>
 
     </main>  
 
     <footer>
-      <div class="container">
-        <div class="wrapper-ex d-flex flex-column gap-2">
+      <div class="container  ">
+        <div class="wrapper-ex d-flex flex-column gap-2 ">
         <div class="wrapper d-flex flex-column flex-lg-row gap-1 gap-lg-5 align-items-center ">
            
        <div class="input-group my-3 w-75 ">
@@ -183,3 +155,19 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<!-- 
+<div class="icons d-flex gap-3 text-secondary ">
+  <span class="" >
+    <img src="imgs/imgi_3_icon-umberella.png" alt="umbrella icon"/>
+    <span>some text</span>
+  </span>
+  <span>
+    <img src="imgs/imgi_4_icon-wind.png" alt="wind icon"/>
+    <span>some text</span>
+  </span>
+  <span>
+    <img src="imgs/imgi_5_icon-compass.png" alt="compass icon"/>
+    <span>some text</span>
+  </span>
+  
+</div> -->
