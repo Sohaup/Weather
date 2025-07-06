@@ -61,21 +61,21 @@ function render(day={} ) {
     const pSpan1  = document.createElement("span");
     pSpan1.textContent = day.avghumidity; // humadidty
     const pImg1 = document.createElement("img");
-    pImg1.setAttribute("src" , "/imgs/imgi_3_icon-umberella.png");
+    pImg1.setAttribute("src" , "./imgs/imgi_3_icon-umberella.png");
     pImg1.setAttribute("alt" , "umbrella icon");
     pImg1.setAttribute("width" , 25);
     footerP1.append( pImg1 , pSpan1 ,);
     const pSpan2  = document.createElement("span");
     pSpan2.textContent = day.maxwind_kph; // wind spead
     const pImg2 = document.createElement("img");
-    pImg2.setAttribute("src" , "/imgs/imgi_4_icon-wind.png");
+    pImg2.setAttribute("src" , "./imgs/imgi_4_icon-wind.png");
     pImg2.setAttribute("alt" , "wind icon");
     pImg2.setAttribute("width" , 25);
     footerP2.append(pImg2 , pSpan2);
     const pSpan3  = document.createElement("span");
     pSpan3.textContent = day.windDir // wind diretion
     const pImg3 = document.createElement("img");
-    pImg3.setAttribute("src" , "/imgs/imgi_5_icon-compass.png");
+    pImg3.setAttribute("src" , "./imgs/imgi_5_icon-compass.png");
     pImg3.setAttribute("alt" , "compass icon");
     pImg3.setAttribute("width" , 25);
     footerP3.append( pImg3 , pSpan3);  
