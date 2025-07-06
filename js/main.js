@@ -155,7 +155,8 @@ function getCounry(url , key , days) {
 }
 
 
-const dataArr = JSON.parse(localStorage.getItem("weather")).forEach((obj)=>render(obj));
+const dataArr = JSON.parse(localStorage.getItem("weather"));
+dataArr ? dataArr.forEach((obj)=>render(obj)) : [];
 getCounry("http://api.weatherapi.com/v1/forecast.json" );
 
 
