@@ -154,9 +154,11 @@ function getCounry(url , key , days) {
     });
 }
 
-
-const dataArr = JSON.parse(localStorage.getItem("weather"));
+try { 
+ const dataArr = JSON.parse(localStorage.getItem("weather"));
 dataArr ? dataArr.forEach((obj)=>render(obj)) : [];
+ } catch(err) { 
 getCounry("http://api.weatherapi.com/v1/forecast.json" );
+}
 
 
